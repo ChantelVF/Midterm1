@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Mono:700|Roboto+Slab:100");
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body style="margin: 0; background: rgba(255, 255, 255, 1)">
+    <input type="hidden" id="anPageName" name="page" value="index" />
+    <div class="index screen">
+      <img class="rectangle-1-C61RwL" src="img/rectangle-1@1x.png" />
+      <img class="logo-C61RwL smart-layers-pointers" src="img/logo@1x.png" />
+      <div class="emblem-C61RwL">
+        <img class="path2828-2ktYQJ" src="img/path2828@2x.png" />
+        <img class="path2830-2ktYQJ" src="img/path2830@2x.png" />
+        <img class="path2834-2ktYQJ" src="img/path2834@2x.png" />
+        <img class="path2836-2ktYQJ" src="img/path2836@2x.png" />
+      </div>
+      <div class="rectangle-2-C61RwL"></div>
+      <div class="nyc-C61RwL robotomono-bold-black-28px">NYC</div>
+      <div class="location-button-C61RwL smart-layers-pointers">
+        <div class="mnh-i461430-RCbY6C roboto-medium-black-18px">MNH</div>
+      </div>
+      <div class="location-button-VMr6Om smart-layers-pointers">
+        <div class="mnh-i464430-iN1Xxf roboto-medium-black-18px">WCH</div>
+      </div>
+      <div class="location-button-mzXdH9 smart-layers-pointers">
+        <div class="mnh-i440430-lMXwB5 roboto-medium-black-18px">FCT</div>
+      </div>
+      <div class="location-button-QxM5SU smart-layers-pointers">
+        <div class="mnh-i443430-nM8up1 roboto-medium-black-18px">LGI</div>
+      </div>
+      <div class="location-button-2P4qUJ smart-layers-pointers">
+        <div class="mnh-i446430-4bUXzK roboto-medium-black-18px">JSY</div>
+      </div>
+      <div class="location-button-qr8e7q smart-layers-pointers">
+        <div class="mnh-i449430-LsVCcP roboto-medium-black-18px">STN</div>
+      </div>
+      <div class="location-button-J1YQmd smart-layers-pointers">
+        <div class="mnh-i452430-Za2TUj roboto-medium-black-18px">BRX</div>
+      </div>
+      <div class="location-button-a5WPlX smart-layers-pointers">
+        <div class="mnh-i455430-F0OLoB roboto-medium-black-18px">QUE</div>
+      </div>
+      <div class="location-button-HlKRTo smart-layers-pointers">
+        <div class="mnh-i458430-xNb70W roboto-medium-black-18px">BRK</div>
+      </div>
+      <div class="secondary-search-with-page-C61RwL">
+        <div class="component-3-JZYmZM">
+          <img class="rectangle-4-ylRwzx" src="img/rectangle-4@2x.png" />
+          <input
+            class="search-all-ylRwzx robotoslab-thin-black-24px"
+            name="search-all"
+            placeholder="Search All"
+            type="text"
+            required
+          />
+        </div>
+        <div class="plagiarism-24px-1-JZYmZM">
+          <div class="group-Lpxn3k"><img class="vector-ESkhFm" src="img/vector@2x.png" /></div>
+          <div class="group-7xkjbj">
+            <div class="group-6KqHFe">
+              <img class="vector-voQX2W" src="img/vector-3@2x.png" />
+              <img class="vector-yx14Ox" src="img/vector-4@2x.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="location-button-VkPPtx">
+        <div class="rectangle-3-uCGXf4"></div>
+        <div class="language-uCGXf4 roboto-medium-black-18px">Language</div>
+      </div>
+      <img class="component-4-C61RwL smart-layers-pointers" src="img/component-4@2x.png" />
+      <div class="rectangle-28-C61RwL smart-layers-pointers"></div>
+      <a href="search.html"> <div class="rectangle-42-C61RwL smart-layers-pointers"></div></a>
+      <div class="rectangle-40-C61RwL smart-layers-pointers"></div>
+      <div class="rectangle-43-C61RwL smart-layers-pointers"></div>
+      <div class="rectangle-41-C61RwL smart-layers-pointers"></div>
+      <div class="rectangle-44-C61RwL smart-layers-pointers"></div>
+      <div class="rectangle-34-C61RwL"></div>
+      <img class="rectangle-35-C61RwL smart-layers-pointers" src="img/rectangle-35@2x.png" />
+      <div class="rectangle-36-C61RwL smart-layers-pointers"></div>
+      <div class="rectangle-37-C61RwL smart-layers-pointers"></div>
+      <div class="rectangle-47-C61RwL smart-layers-pointers"></div>
+      <div class="rectangle-45-C61RwL smart-layers-pointers"></div>
+      <div class="rectangle-38-C61RwL"></div>
+      <div class="rectangle-46-C61RwL smart-layers-pointers"></div>
+      <div class="my-account-C61RwL smart-layers-pointers">My Account</div>
+      <div class="faq-tos-and-legal-C61RwL roboto-normal-white-18px">FAQ&nbsp;&nbsp;TOS and Legal.</div>
+      <div class="craiglist-blog-C61RwL roboto-normal-white-18px">Craiglist Blog</div>
+      <div class="nearby-craigslist-C61RwL roboto-normal-white-18px">Nearby Craigslist</div>
+      <div class="social-C61RwL roboto-normal-white-18px">Social</div>
+      <div class="about-C61RwL roboto-normal-white-18px">About</div>
+      <div class="help-C61RwL roboto-normal-white-18px">Help</div>
+      <div class="community-C61RwL roboto-medium-black-18px">Community</div>
+      <a href="search.html"><div class="housing-C61RwL roboto-medium-black-18px">Housing</div></a>
+      <div class="services-C61RwL roboto-medium-black-18px">Services</div>
+      <div class="jobs-C61RwL roboto-medium-black-18px">Jobs</div>
+      <div class="for-sale-C61RwL roboto-medium-black-18px">For Sale</div>
+      <div class="gigs-C61RwL roboto-medium-black-18px">Gigs</div>
+      <div class="nav-item-C61RwL border-1px-black smart-layers-pointers">
+        <div class="make-a-selection-i29772911-h6tI9i roboto-normal-black-18px">Make a Selection</div>
+        <img class="polygon-1-h6tI9i" src="img/polygon-1-7@2x.png" />
+      </div>
+      <div class="nav-item-VMr6Om border-1px-black smart-layers-pointers">
+        <div class="make-a-selection-i29742911-phBzxv roboto-normal-black-18px">Make a Selection</div>
+        <img class="polygon-1-phBzxv" src="img/polygon-1-7@2x.png" />
+      </div>
+      <div class="nav-item-mzXdH9 border-1px-black smart-layers-pointers">
+        <div class="make-a-selection-i29712911-Gq9KLN roboto-normal-black-18px">Make a Selection</div>
+        <img class="polygon-1-Gq9KLN" src="img/polygon-1-7@2x.png" />
+      </div>
+      <div class="nav-item-QxM5SU border-1px-black smart-layers-pointers">
+        <div class="make-a-selection-i29682911-fpbxtN roboto-normal-black-18px">Make a Selection</div>
+        <img class="polygon-1-fpbxtN" src="img/polygon-1-7@2x.png" />
+      </div>
+      <div class="nav-item-2P4qUJ border-1px-black smart-layers-pointers">
+        <div class="make-a-selection-i29652911-4jLRqf roboto-normal-black-18px">Make a Selection</div>
+        <img class="polygon-1-4jLRqf" src="img/polygon-1-7@2x.png" />
+      </div>
+      <div class="nav-item-qr8e7q border-1px-black smart-layers-pointers">
+        <div class="make-a-selection-i29622911-9VzoMl roboto-normal-black-18px">Make a Selection</div>
+        <img class="polygon-1-9VzoMl" src="img/polygon-1-7@2x.png" />
+      </div>
+      <div class="rectangle-39-C61RwL smart-layers-pointers"></div>
+      <div class="resumes-C61RwL roboto-medium-black-18px">Resumes</div>
+    </div>
+  </body>
+</html>
